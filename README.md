@@ -286,6 +286,22 @@ sudo ./ws-port-remapper.sh \
 
 هر دو گروه روی پورت `8443` هستند و nginx با SNI آن‌ها را از هم جدا می‌کند.
 
+```
+sudo bash ws-port-remapper.sh --debug \
+  --panel-url https://127.0.0.1:34098/BwMeBQgEsxYESa3N5mz \
+  --api-token "B6crMBEnPONxe13tFlp3uGfb8s2atGTD8pLOCAsx6as1Ko3" \
+  --port 443 \
+  --internal-base 10010 \
+  --cdn-address 104.66.172.246 \
+  --cdn-sni cdn.urt19.com \
+  --cdn-cert /cert_folder/cert/cdn.urt19.com/fullchain.pem \
+  --cdn-key /cert_folder/cert/cdn.urt19.com/privkey.pem \
+  --direct-sni direct.urt19.com \
+  --direct-cert /cert_folder/cert/direct.urt19.com/fullchain.pem \
+  --direct-key /cert_folder/cert/direct.urt19.com/privkey.pem \
+  --host-security clone
+```
+
 ### اضافه کردن Reality
 
 Reality نیازی به گواهی ندارد. فقط آدرسی که کلاینت باید به آن وصل شود را بدهید (برای Reality نباید IP کلادفلر باشد، چون Reality پشت CDN کار نمی‌کند):
