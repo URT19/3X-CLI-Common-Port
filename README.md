@@ -95,21 +95,16 @@ Client ──► (Cloudflare) ──► server :8443  (nginx)
 
 ## نصب
 
+
 ```bash
-git clone https://github.com/<your-account>/ws-port-remapper.git
-cd ws-port-remapper
+curl -fsSLO https://raw.githubusercontent.com/URT19/3X-CLI-Common-Port/refs/heads/main/ws-port-remapper.sh
 chmod +x ws-port-remapper.sh
+```
+
+```
 sudo ./ws-port-remapper.sh --help
 ```
-
-یا فقط خود فایل را دانلود کنید:
-
-```bash
-curl -fsSLO https://raw.githubusercontent.com/<your-account>/ws-port-remapper/main/ws-port-remapper.sh
-chmod +x ws-port-remapper.sh
-```
-
-> قبل از اجرای هر اسکریپتی با دسترسی root، کدش را بخوانید.
+ 
 
 ---
 
